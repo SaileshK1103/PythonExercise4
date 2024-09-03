@@ -57,3 +57,88 @@ while result != "head":
 #Print the final result when 'Heads" is obtained
 print("Finally, flipped", result)
 '''
+#4. While loops(while)
+#Write a program that uses a while loop to print out all numbers divisible by three in the range of 1-1000.
+'''
+range_object = range(1,1000)
+index = 0
+while index < len(range_object):
+    value = range_object[index]
+    if value % 3 == 0:
+        print(f"The number is divisible by 3 {value}")
+    index += 1
+'''
+
+#Write a program that converts inches to centimeters until the user inputs a negative value. Then the program ends.
+'''
+input_inches  = float(input("Enter a positive number in inches: "))
+while input_inches > 0:
+    centimeter = input_inches * 2.54
+    print(f"the entered{input_inches}inches is {centimeter} centimeter")
+    input_inches = float(input("Enter a positive number in inches: or 0 to quit"))
+
+'''
+
+#Write a program that asks the user to enter numbers until they enter an empty string to quit.
+#Finally, the program prints out the smallest and largest number from the numbers it received.
+'''
+input = input("Enter a number: ")
+list = []
+while input !="":
+    list.append(input)
+    list = int(input("Enter next number: "))
+print(list)
+'''
+
+#Lecture: kirpal
+#List
+#Example1
+'''
+names =[]
+name = input("Enter a name or quit by pressing enter ")
+while name != "":
+    names.append(name)
+    name = input("Enter a next name or quit by pressing enter ")
+print(names)
+
+'''
+#Example2
+'''
+list1 = ["duxin","hechun","sailesh"]
+list2 =["dog","cat","ssds"]
+list1.extend(list2)
+list2.extend(list1)
+print(list1)
+print(list2)
+list2.sort()
+print(list2)
+
+'''
+
+#For loop
+#Example1
+'''
+for number in range(5,23,3):
+    print(number)
+'''
+#Example2
+'''
+names = ["a","b","c"]
+for n in names:
+    print(n)
+'''
+#Example 3
+'''
+for n in range(1,11,1):
+    print(f"2*{n}= {2*n}")
+'''
+
+#Example4
+'''
+num = int(input("Enter a number: "))
+for n in range(1,num+1):
+    if n%2==0:
+        print(f"The even number is {n}")
+    else:
+        print(f"The odd number is {n}")
+'''
